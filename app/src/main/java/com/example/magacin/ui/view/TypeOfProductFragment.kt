@@ -89,7 +89,7 @@ class TypeOfProductFragment : Fragment() {
                                 "Izmeni",
                                 DialogInterface.OnClickListener { dialog, which ->
                                     val action =
-                                        com.example.magacin.ui.typeOfProduct.TypeOfProductFragmentDirections.actionTypeOfProductFragmentToEditTypeOfProductFragment2(
+                                        TypeOfProductFragmentDirections.actionTypeOfProductFragmentToEditTypeOfProductFragment2(
                                             typeOfProduct,
                                             "Parametri"
                                         )

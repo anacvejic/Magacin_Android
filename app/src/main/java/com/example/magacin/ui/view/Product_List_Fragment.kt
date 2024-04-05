@@ -102,7 +102,7 @@ class Product_List_Fragment : Fragment(), ProductWithAmountAdapter.OnItemClicked
                                 "Izmeni",
                                 DialogInterface.OnClickListener { dialog, which ->
                                     val action =
-                                        com.example.magacin.ui.product.Product_List_FragmentDirections.actionProductListFragmentToEditProductFragment(
+                                        Product_List_FragmentDirections.actionProductListFragmentToEditProductFragment(
                                             tempProduct,
                                             "parametri"
                                         )
@@ -132,7 +132,7 @@ class Product_List_Fragment : Fragment(), ProductWithAmountAdapter.OnItemClicked
                 when (event) {
                     is ProductEvent.NavigateToTypeOfProduct -> {
                         val action =
-                            com.example.magacin.ui.product.Product_List_FragmentDirections.actionProductListFragmentToTypeOfProductFragment(
+                            Product_List_FragmentDirections.actionProductListFragmentToTypeOfProductFragment(
                                 event.tempProduct,
                                 "Send type pf product"
                             )
