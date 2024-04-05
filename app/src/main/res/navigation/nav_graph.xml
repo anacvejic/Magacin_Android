@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/product_List_Fragment">
+
+    <fragment
+        android:id="@+id/product_List_Fragment"
+        android:name="com.example.magacin.ui.view.Product_List_Fragment"
+        android:label="Magacin"
+        tools:layout="@layout/fragment_product__list_">
+        <action
+            android:id="@+id/action_product_List_Fragment_to_add_Product_Fragment"
+            app:destination="@id/add_Product_Fragment" />
+        <action
+            android:id="@+id/action_product_List_Fragment_to_add_TypeOfProduct_Fragment"
+            app:destination="@id/add_TypeOfProduct_Fragment" />
+        <action
+            android:id="@+id/action_product_List_Fragment_to_typeOfProductFragment"
+            app:destination="@id/typeOfProductFragment" />
+        <action
+            android:id="@+id/action_product_List_Fragment_to_editProductFragment"
+            app:destination="@id/editProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_Product_Fragment"
+        android:name="com.example.magacin.ui.view.Add_Product_Fragment"
+        android:label="Magacinsko poslovanje"
+        tools:layout="@layout/fragment_add__product_2" />
+    <fragment
+        android:id="@+id/add_TypeOfProduct_Fragment"
+        android:name="com.example.magacin.ui.view.Add_TypeOfProduct_Fragment"
+        android:label="Magacinsko poslovanje"
+        tools:layout="@layout/fragment_add__type_of_product_">
+        <action
+            android:id="@+id/action_add_TypeOfProduct_Fragment_to_list_Of_ProductFragment"
+            app:destination="@id/list_Of_ProductFragment" />
+        <argument
+            android:name="product"
+            app:argType="com.example.magacin.enteties.Product"
+            app:nullable="true" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_add_TypeOfProduct_Fragment_to_product_List_Fragment"
+            app:destination="@id/product_List_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/list_Of_ProductFragment"
+        android:name="com.example.magacin.ui.productList.List_Of_ProductFragment"
+        android:label="Proizvodi"
+        tools:layout="@layout/fragment_list__of__product">
+        <action
+            android:id="@+id/action_list_Of_ProductFragment_to_add_TypeOfProduct_Fragment"
+            app:destination="@id/add_TypeOfProduct_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/typeOfProductFragment"
+        android:name="com.example.magacin.ui.view.TypeOfProductFragment"
+        android:label="Proizvodi"
+        tools:layout="@layout/fragment_type_of_product" >
+        <argument
+            android:name="typeOfProduct"
+            app:argType="com.example.magacin.enteties.TempProduct"
+            app:nullable="true" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_typeOfProductFragment_to_editTypeOfProductFragment2"
+            app:destination="@id/editTypeOfProductFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTypeOfProductFragment2"
+        android:name="com.example.magacin.ui.view.EditTypeOfProductFragment"
+        android:label="Izmena proizvoda"
+        tools:layout="@layout/fragment_edit_type_of_product">
+        <argument
+            android:name="typeOfProduct"
+            app:argType="com.example.magacin.enteties.TypeOfProduct"
+            app:nullable="true" />
+        <argument
+            android:name="prenosobjekta"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProductFragment"
+        android:name="com.example.magacin.ui.view.EditProductFragment"
+        android:label="Izmena proizvoda"
+        tools:layout="@layout/fragment_edit_product">
+        <argument
+            android:name="tempProduct"
+            app:argType="com.example.magacin.enteties.TempProduct"
+            app:nullable="true" />
+        <argument
+            android:name="proizvod"
+            app:argType="string" />
+    </fragment>
+</navigation>

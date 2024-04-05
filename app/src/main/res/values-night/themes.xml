@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Magacin" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">#D8D6DC</item>
+        <item name="titleTextColor">@color/colorPrimary</item>
+    </style>
+</resources>

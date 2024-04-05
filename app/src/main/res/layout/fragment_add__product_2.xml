@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    tools:context=".ui.view.Add_Product_Fragment">
+
+    <LinearLayout
+        android:id="@+id/layout_addProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_nameOfProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="@string/et_nameOfProduct"
+            android:inputType="text"
+            android:textSize="20dp"
+            android:minHeight="48dp"
+            android:lines="2"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            app:fontFamily="monospace"/>
+
+        <EditText
+            android:id="@+id/et_codeOfProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="@string/et_codeOfProduct"
+            android:inputType="text"
+            android:textSize="20dp"
+            android:minHeight="48dp"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            app:fontFamily="monospace"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave_newProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:background="#CECEDA"
+        android:text="@string/btnAddNewProduct"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        tools:ignore="TextSizeCheck" />
+
+
+</androidx.cardview.widget.CardView>

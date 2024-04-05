@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#2A164C</color>
+    <color name="item_product">#A5A2A2</color>
+    <color name="divider_color">#929396</color>
+    <color name="blueLight">#A7D1F1</color>
+    <color name="listProduct">#EAEAF6</color>
+    <color name="edittypeofproduct">#F3EFEF</color>
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Magacin</string>
+    <string name="search">Pretraga...</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnAddNewProduct">Dodaj novi proizvod</string>
+    <string name="et_nameOfProduct">Naziv proizvoda...</string>
+    <string name="et_codeOfProduct">Šifra proizvoda...</string>
+    <string name="et_invoiceNumber">Broj fakture...</string>
+    <string name="btnNameOfProductType">Naziv proizvoda...</string>
+    <string name="et_priceOfProductType">Cena po komadu...</string>
+    <string name="et_amountOfProductType">Količina...</string>
+    <string name="btnSave_newTypeOfProduct">Dodaj novu vrstu proizvoda</string>
+    <string name="addNewProduct">Dodaj novi proizvod</string>
+    <string name="addNewTypeOfProduct">Dodaj novu vrstu proizvoda</string>
+    <string name="tv_nameOfProduct">Naziv: </string>
+    <string name="tv_codeOfProduct">Šifra: </string>
+    <string name="tv_productAmount">Količina: </string>
+    <string name="tv_invoiceNumber">Broj fakture: </string>
+    <string name="tv_amount">Uneta količina: </string>
+    <string name="tv_price">Cena: </string>
+    <string name="tv_date">Datum: </string>
+    <string name="et_invoicenumberedit">Broj fakture: </string>
+    <string name="et_pricedit">Cena: </string>
+    <string name="et_amountedit">Količina: </string>
+    <string name="btnEdit">Sačuvaj izmene</string>
+    <string name="et_namedit">Naziv proizvoda</string>
+    <string name="et_codeedit">Šifra proizvoda</string>
+</resources>
