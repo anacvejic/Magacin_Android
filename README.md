@@ -21,5 +21,7 @@ Store-house app was created as a research project with no practical purpose in m
 
 
 ## Illustrations
-![Uploading slika 1.JPG…]()
+
+![slika_1](https://github.com/anacvejic/Magacin_Android/assets/65834374/835bc44c-04a7-43d5-8c48-208c219541d0)
+
 
